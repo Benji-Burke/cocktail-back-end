@@ -10,4 +10,4 @@ const cocktailSchema = mongoose.Schema({
     
 })
 
-module.exports = mongoose.model('Cocktail', cocktailSchema)
+module.exports = mongoose.model('Cocktails', cocktailSchema)

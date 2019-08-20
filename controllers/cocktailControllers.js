@@ -1,6 +1,6 @@
 const express= require('express')
 const cocktailController = express.Router()
-const cocktailModel = require('../models/cocktail.js')
+const cocktailModel = require('../models/cocktails.js')
 
 
 

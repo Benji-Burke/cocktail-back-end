@@ -4,7 +4,7 @@ const cors = require('cors')
 const app = express();
 const PORT = 3003;
 
-const cocktailController= require('./controllers/cocktailController');
+const cocktailControllers= require('./controllers/cocktailControllers');
 
 
 app.use(express.json())
@@ -21,7 +21,7 @@ const corsOptions = {
 }
 app.use(cors(corsOptions))
 
-app.use('/cocktails', cocktailController);
+app.use('/cocktails', cocktailControllers);
 
 // MONGOOSE ERROR / DISCONNECTION
 mongoose.connection.on('error', err => console.log(err.message + ' is Mongod not running?'));
