@@ -4,11 +4,7 @@ const cors = require('cors')
 const app = express();
 const PORT = 3003;
 
-
 const cocktailControllers= require('./controllers/cocktailControllers');
-
-
-
 
 
 app.use(express.json())
@@ -48,10 +44,7 @@ app.get('/seed', (req, res) => {
     } else {
       res.status(200).json(createdCocktails)
     }
-  }
-
-
-
-
+  })
+})
 
 app.listen(PORT, () => console.log('Listening on port: ', PORT))
