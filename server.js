@@ -34,4 +34,17 @@ mongoose.connection.once('open', () => {
   console.log('connected to mongoose...');
 })
 
+// seed data
+// const seed = require('./models/seed.js');
+// const Cocktail = require('./models/cocktails.js');
+// app.get('/seed', (req, res) => {
+//   Cocktail.insertMany(seed, (err, createdCocktails) => {
+//     if (err) {
+//       res.status(400).json({ error: err.message})
+//     } else {
+//       res.status(200).json(createdCocktails)
+//     }
+//   })
+// })
+
 app.listen(PORT, () => console.log('Listening on port: ', PORT))
