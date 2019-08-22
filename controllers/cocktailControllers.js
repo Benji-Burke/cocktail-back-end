@@ -82,7 +82,7 @@ cocktailController.post('/', (req, res) =>{
 
 //Delete
 cocktailController.delete('/:id', (req, res) =>{
-    cocktailModel.findbyIdAndRemove(req.params.id, (err, deletedCocktail) =>{
+    cocktailModel.findByIdAndRemove(req.params.id, (err, deletedCocktail) =>{
         if (err) {
             res.status(400).json({ error: err.message})
         }
@@ -92,7 +92,7 @@ cocktailController.delete('/:id', (req, res) =>{
 
 // Update
 cocktailController.put('/:id', (req, res) =>{
-    cocktailModel.findbyIdAndUpdate(req.params.id, req.body, {new: true }, (err, updatedCocktail =>{
+    cocktailModel.findByIdAndUpdate(req.params.id, req.body, {new: true }, (err, updatedCocktail =>{
         if(err) {
             res.status(400).json({ error: err.message})
         } else {
