@@ -13,7 +13,7 @@ let seedCocktails = [
         alcoholic: 'Alcoholic',
         glass: 'Cocktail glass',
         ingredients: ['Sweet Vermouth', 'Bourbon', 'Angostura bitters', 'Ice','Maraschino cherry', 'Orange peel'],
-        instructions: 'Stirred over ice, strained into a chilled glass, garnished, and served up.'
+        instructions: 'Stir ingredients over ice, strain into a chilled glass, garnish, and serve up.'
     },
     {
         name: 'Gin and Tonic',
@@ -50,7 +50,7 @@ let seedCocktails = [
     {
         name: 'Shirley Temple',
         img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJllrVRnMQ5JSOrF8iHhvotQicTcxWpRJjGBLpkWSubQnZJalW',
-        alcoholic: 'Non-alcoholic',
+        alcoholic: 'Non alcoholic',
         glass: 'Highball glass',
         ingredients: ['Ginger Ale', 'Grenadine', 'Maraschino Cherries'],
         instructions: 'Combine ginger ale and a splash of grenadine over ice, stir well and garnish with maraschino cherries.'
@@ -62,6 +62,22 @@ let seedCocktails = [
         glass: 'Old-fashioned glass',
         ingredients: ['Bourbon','Angostura bitters', 'Sugar', 'Water'],
         instructions: 'Place sugar cube in old fashioned glass and saturate with bitters, add a dash of plain water. Muddle until dissolved. Fill the glass with ice cubes and add whiskey. Garnish with orange twist and a cocktail cherry.'
+    },
+    {
+        name: 'Whiskey Sour',
+        img: 'https://assets.punchdrink.com/wp-content/uploads/2017/10/Social-Whiskey-Sour-3.jpg',
+        alcoholic: 'Alcoholic',
+        glass: 'Old-fashioned glass',
+        ingredients: ['Blended whiskey', 'Lemon', 'Powdered sugar','Cherry'],
+        instructions: 'Shake with ice. Strain into chilled glass, garnish and serve. If served on the rocks, strain ingredients into old-fashioned glass filled with ice.'
+    },
+    {
+        name: 'Moscow Mule',
+        img: 'https://images.unsplash.com/photo-1527628126150-086ff233b951?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+        alcoholic: 'Alcoholic',
+        glass: 'Copper mug',
+        ingredients: ['Vodka', 'Lime juice', 'Ginger beer'],
+        instructions: 'Combine vodka and ginger beer in a highball glass filled with ice. Add lime juice. Stir gently. Garnish.'
     }
 ]
 
