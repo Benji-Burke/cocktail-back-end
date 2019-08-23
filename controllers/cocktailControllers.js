@@ -91,13 +91,12 @@ cocktailController.delete('/:id', (req, res) =>{
 })
 
 // Update
-cocktailController.put('/:id', (req, res) =>{
+cocktailController.put('/:id', (req, res) => {
     cocktailModel.findByIdAndUpdate(req.params.id, req.body, {new: true }, (err, updatedCocktail =>{
-        if(err) {
+        if (err) {
             res.status(400).json({ error: err.message})
-        } else {
+        } 
             res.status(200).json(updatedCocktail)
-        }
     }))
 })
 

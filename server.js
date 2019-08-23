@@ -2,6 +2,8 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors')
 const app = express();
+const PORT = process.env.PORT || 3003;
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/cocktail'
 const axios = require('axios')
 
 const cocktailControllers= require('./controllers/cocktailControllers');
@@ -32,6 +34,10 @@ app.use('/cocktails', cocktailControllers);
 mongoose.connection.on('error', err => console.log(err.message + ' is Mongod not running?'));
 mongoose.connection.on('disconnected', () => console.log('mongo disconnected'));
 
+// Connect to Mongo
+mongoose.connect(MONGODB_URI, { useNewUrlParser: true},() =>{
+    console.log('we are connected YO')
+});
 
 // seed data
 const seed = require('./models/seed.js');
@@ -73,12 +79,7 @@ app.get('/seed', (req, res) => {
 
 
 
-const PORT =process.env.PORT || 3003;
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/cocktail'
-// Connect to Mongo
-mongoose.connect(MONGODB_URI, { useNewUrlParser: true},() =>{
-    console.log('we are connected YO')
-});
+
 
   
         
