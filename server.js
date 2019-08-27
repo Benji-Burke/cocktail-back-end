@@ -12,17 +12,17 @@ const cocktailControllers= require('./controllers/cocktailControllers');
 app.use(express.json())
 
 
-const whitelist = ['http://localhost:3000', 'http://bar-none.surge.sh/'],
-const corsOptions = {
-  origin: (origin, callback) => {
-    if (whitelist.indexOf(origin) !== 1) {
-      callback(null, true)
-    } else {
-      callback(new Error('not allowed CORS'))
-    }
-  }
-}
-app.use(cors(corsOptions))
+// const whitelist = ['http://localhost:3000', 'http://bar-none.surge.sh/'],
+// const corsOptions = {
+//   origin: (origin, callback) => {
+//     if (whitelist.indexOf(origin) !== 1) {
+//       callback(null, true)
+//     } else {
+//       callback(new Error('not allowed CORS'))
+//     }
+//   }
+// }
+// app.use(cors(corsOptions))
 
 app.use('/cocktails', cocktailControllers);
 
