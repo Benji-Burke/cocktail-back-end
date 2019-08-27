@@ -72,7 +72,7 @@ mongoose.connect(MONGODB_URI, { useNewUrlParser: true},() =>{
           res.redirect('/cocktails')
       
         
-      });
+        });
 
 
 
@@ -83,6 +83,6 @@ mongoose.connect(MONGODB_URI, { useNewUrlParser: true},() =>{
         
         app.listen(PORT, () => {
             console.log('listening on ', PORT);
-});
+        });
         
         // app.listen(PORT, () => console.log('Listening on port: ', PORT))
