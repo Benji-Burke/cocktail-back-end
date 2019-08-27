@@ -15,7 +15,7 @@ const cocktailControllers= require('./controllers/cocktailControllers');
 app.use(express.json())
 
 
-const whitelist = ['http://localhost:3000', 'https://cryptic-chamber-65846.herokuapp.com/cocktails'],
+const whitelist = ['http://localhost:3000']
 const corsOptions = {
   origin: (origin, callback) => {
     if (whitelist.indexOf(origin) !== 1) {
