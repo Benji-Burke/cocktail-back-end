@@ -2,14 +2,14 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors')
 const app = express();
-const PORT = 3003;
+const PORT = process.env.PORT || 3003;
 
 const cocktailControllers= require('./controllers/cocktailControllers');
 
 
 app.use(express.json())
 
-const whitelist = ['http://localhost:3000', 'https://fathomless-sierra-68956.herokuapp.com']
+const whitelist = ['http://localhost:3000', 'http://lewd-crate.surge.sh/']
 const corsOptions = {
   origin: (origin, callback) => {
     if (whitelist.indexOf(origin) !== 1) {
@@ -28,8 +28,10 @@ app.use('/cocktails', cocktailControllers);
 mongoose.connection.on('error', err => console.log(err.message + ' is Mongod not running?'));
 mongoose.connection.on('disconnected', () => console.log('mongo disconnected'));
 
+
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/cocktail';
 // MONGOOSE LISTENER
-mongoose.connect('mongodb://localhost:27017/cocktail', { useNewUrlParser: true })
+mongoose.connect(MONGODB_URI, { useNewUrlParser: true })
 mongoose.connection.once('open', () => {
   console.log('connected to mongoose...');
 })

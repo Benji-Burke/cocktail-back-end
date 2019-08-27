@@ -6,6 +6,7 @@ const cocktailSchema = mongoose.Schema({
     alcoholic: String,
     glass: String,
     instructions: String,
+    favorite: Boolean,
     ingredients: Array
 
 })

@@ -5,7 +5,8 @@ let seedCocktails = [
         alcoholic: 'Alcoholic',
         glass: 'Cocktail glass',
         ingredients: ['Tequila', 'Triple sec', 'Lime juice', 'salt'],
-        instructions: 'Rub the rim of the glass with the lime slice to make the salt stick to it. Take care to moisten only the outer rim and sprinkle the salt on it. The salt should present to the lips of the imbiber and never mix into the cocktail. Shake the other ingredients with ice, then carefully pour into the glass.'
+        instructions: 'Rub the rim of the glass with the lime slice to make the salt stick to it. Take care to moisten only the outer rim and sprinkle the salt on it. The salt should present to the lips of the imbiber and never mix into the cocktail. Shake the other ingredients with ice, then carefully pour into the glass.',
+        favorite: false
     },
     {
         name: 'Manhattan',
@@ -61,7 +62,8 @@ let seedCocktails = [
         alcoholic: 'Alcoholic',
         glass: 'Old-fashioned glass',
         ingredients: ['Bourbon','Angostura bitters', 'Sugar', 'Water'],
-        instructions: 'Place sugar cube in old fashioned glass and saturate with bitters, add a dash of plain water. Muddle until dissolved. Fill the glass with ice cubes and add whiskey. Garnish with orange twist and a cocktail cherry.'
+        instructions: 'Place sugar cube in old fashioned glass and saturate with bitters, add a dash of plain water. Muddle until dissolved. Fill the glass with ice cubes and add whiskey. Garnish with orange twist and a cocktail cherry.',
+        favorite: false
     }
 ]
 
