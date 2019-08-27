@@ -38,17 +38,17 @@ mongoose.connect(MONGODB_URI, { useNewUrlParser: true},() =>{
 });
 
 // seed data
-// const seed = require('./models/seed.js');
-// const Cocktail = require('./models/cocktails.js');
-// app.get('/seed', (req, res) => {
-//     Cocktail.insertMany(seed, (err, createdCocktails) => {
-//         if (err) {
-//             res.status(400).json({ error: err.message})
-//           } else {
-//               res.status(200).json(createdCocktails)
-//             }
-//           })
-//         })
+const seed = require('./models/seed.js');
+const Cocktail = require('./models/cocktails.js');
+app.get('/seed', (req, res) => {
+    Cocktail.insertMany(seed, (err, createdCocktails) => {
+        if (err) {
+            res.status(400).json({ error: err.message})
+          } else {
+              res.status(200).json(createdCocktails)
+            }
+          })
+        })
         
         
         // index
