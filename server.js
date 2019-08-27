@@ -9,13 +9,10 @@ const axios = require('axios')
 const cocktailControllers= require('./controllers/cocktailControllers');
 
 
-
-
-
 app.use(express.json())
 
 
-const whitelist = ['http://localhost:3000']
+const whitelist = ['http://localhost:3000', 'http://bar-none.surge.sh/'],
 const corsOptions = {
   origin: (origin, callback) => {
     if (whitelist.indexOf(origin) !== 1) {
@@ -29,6 +26,7 @@ app.use(cors(corsOptions))
 
 app.use('/cocktails', cocktailControllers);
 
+// const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/cocktail';
 
 // MONGOOSE ERROR / DISCONNECTION
 mongoose.connection.on('error', err => console.log(err.message + ' is Mongod not running?'));
@@ -40,17 +38,17 @@ mongoose.connect(MONGODB_URI, { useNewUrlParser: true},() =>{
 });
 
 // seed data
-const seed = require('./models/seed.js');
-const Cocktail = require('./models/cocktails.js');
-app.get('/seed', (req, res) => {
-    Cocktail.insertMany(seed, (err, createdCocktails) => {
-        if (err) {
-            res.status(400).json({ error: err.message})
-          } else {
-              res.status(200).json(createdCocktails)
-            }
-          })
-        })
+// const seed = require('./models/seed.js');
+// const Cocktail = require('./models/cocktails.js');
+// app.get('/seed', (req, res) => {
+//     Cocktail.insertMany(seed, (err, createdCocktails) => {
+//         if (err) {
+//             res.status(400).json({ error: err.message})
+//           } else {
+//               res.status(200).json(createdCocktails)
+//             }
+//           })
+//         })
         
         
         // index
