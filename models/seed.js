@@ -6,7 +6,8 @@ let seedCocktails = [
         glass: 'Cocktail glass',
         ingredients: ['Tequila', 'Triple sec', 'Lime juice', 'salt'],
         instructions: 'Rub the rim of the glass with the lime slice to make the salt stick to it. Take care to moisten only the outer rim and sprinkle the salt on it. The salt should present to the lips of the imbiber and never mix into the cocktail. Shake the other ingredients with ice, then carefully pour into the glass.',
-        favorite: false
+        favorite: false,
+        isSeed: true
     },
     {
         name: 'Manhattan',
@@ -14,7 +15,8 @@ let seedCocktails = [
         alcoholic: 'Alcoholic',
         glass: 'Cocktail glass',
         ingredients: ['Sweet Vermouth', 'Bourbon', 'Angostura bitters', 'Ice','Maraschino cherry', 'Orange peel'],
-        instructions: 'Stirred over ice, strained into a chilled glass, garnished, and served up.'
+        instructions: 'Stirred over ice, strained into a chilled glass, garnished, and served up.',
+        isSeed: true
     },
     {
         name: 'Gin and Tonic',
@@ -22,7 +24,8 @@ let seedCocktails = [
         alcoholic: 'Alcoholic',
         glass: 'Highball glass',
         ingredients: ['Gin', 'Tonic water', 'Lime'],
-        instructions: 'Pour the gin and the tonic water into a highball glass almost filled with ice cubes. Stir well. Garnish with the lime wedge.'
+        instructions: 'Pour the gin and the tonic water into a highball glass almost filled with ice cubes. Stir well. Garnish with the lime wedge.',
+        isSeed: true
     },
     {
         name: 'Mojito',
@@ -30,7 +33,8 @@ let seedCocktails = [
         alcoholic: 'Alcoholic',
         glass: 'Highball glass',
         ingredients: ['Light rum', 'Lime', 'Sugar', 'Mint', 'Soda water'],
-        instructions: 'Muddle mint leaves with sugar and lime juice. Add a splash of soda water and fill the glass with cracked ice. Pour the rum and top with soda water. Garnish and serve with straw.'
+        instructions: 'Muddle mint leaves with sugar and lime juice. Add a splash of soda water and fill the glass with cracked ice. Pour the rum and top with soda water. Garnish and serve with straw.',
+        isSeed: true
     },
     {
         name: 'Martini',
@@ -38,7 +42,8 @@ let seedCocktails = [
         alcoholic: 'Alcoholic',
         glass: 'Cocktail glass',
         ingredients: ['Gin', 'Dry Vermouth', 'Olive'],
-        instructons: 'Straight: Pour all ingredients into mixing glass with ice cubes. Stir well. Strain in chilled martini cocktail glass. Squeeze oil from lemon peel onto the drink, or garnish with olive.'
+        instructons: 'Straight: Pour all ingredients into mixing glass with ice cubes. Stir well. Strain in chilled martini cocktail glass. Squeeze oil from lemon peel onto the drink, or garnish with olive.',
+        isSeed: true
     },
     {
         name: 'Cosmopolitan',
@@ -46,7 +51,8 @@ let seedCocktails = [
         alcoholic: 'Alcoholic',
         glass: 'Cocktail glass',
         ingredients: ['Absolut Citron', 'Lime juice', 'Cointreau', 'Cranberry juice'],
-        instructions: 'Add all ingredients into cocktail shaker filled with ice. Shake well and double strain into large cocktail glass. Garnish with lime wheel.'
+        instructions: 'Add all ingredients into cocktail shaker filled with ice. Shake well and double strain into large cocktail glass. Garnish with lime wheel.',
+        isSeed: true
     },
     {
         name: 'Shirley Temple',
@@ -54,7 +60,8 @@ let seedCocktails = [
         alcoholic: 'Non-alcoholic',
         glass: 'Highball glass',
         ingredients: ['Ginger Ale', 'Grenadine', 'Maraschino Cherries'],
-        instructions: 'Combine ginger ale and a splash of grenadine over ice, stir well and garnish with maraschino cherries.'
+        instructions: 'Combine ginger ale and a splash of grenadine over ice, stir well and garnish with maraschino cherries.',
+        isSeed: true
     },
     {
         name: 'Old Fashioned',
@@ -63,7 +70,8 @@ let seedCocktails = [
         glass: 'Old-fashioned glass',
         ingredients: ['Bourbon','Angostura bitters', 'Sugar', 'Water'],
         instructions: 'Place sugar cube in old fashioned glass and saturate with bitters, add a dash of plain water. Muddle until dissolved. Fill the glass with ice cubes and add whiskey. Garnish with orange twist and a cocktail cherry.',
-        favorite: false
+        favorite: false,
+        isSeed: true
     }
 ]
 
