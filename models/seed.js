@@ -16,6 +16,7 @@ let seedCocktails = [
         glass: 'Cocktail glass',
         ingredients: ['Sweet Vermouth', 'Bourbon', 'Angostura bitters', 'Ice','Maraschino cherry', 'Orange peel'],
         instructions: 'Stirred over ice, strained into a chilled glass, garnished, and served up.',
+        favorite: true,
         isSeed: true
     },
     {
@@ -25,6 +26,7 @@ let seedCocktails = [
         glass: 'Highball glass',
         ingredients: ['Gin', 'Tonic water', 'Lime'],
         instructions: 'Pour the gin and the tonic water into a highball glass almost filled with ice cubes. Stir well. Garnish with the lime wedge.',
+        favorite: false,
         isSeed: true
     },
     {
@@ -34,6 +36,7 @@ let seedCocktails = [
         glass: 'Highball glass',
         ingredients: ['Light rum', 'Lime', 'Sugar', 'Mint', 'Soda water'],
         instructions: 'Muddle mint leaves with sugar and lime juice. Add a splash of soda water and fill the glass with cracked ice. Pour the rum and top with soda water. Garnish and serve with straw.',
+        favorite: false,
         isSeed: true
     },
     {
@@ -43,6 +46,7 @@ let seedCocktails = [
         glass: 'Cocktail glass',
         ingredients: ['Gin', 'Dry Vermouth', 'Olive'],
         instructons: 'Straight: Pour all ingredients into mixing glass with ice cubes. Stir well. Strain in chilled martini cocktail glass. Squeeze oil from lemon peel onto the drink, or garnish with olive.',
+        favorite: false,
         isSeed: true
     },
     {
@@ -52,6 +56,7 @@ let seedCocktails = [
         glass: 'Cocktail glass',
         ingredients: ['Absolut Citron', 'Lime juice', 'Cointreau', 'Cranberry juice'],
         instructions: 'Add all ingredients into cocktail shaker filled with ice. Shake well and double strain into large cocktail glass. Garnish with lime wheel.',
+        favorite: false,
         isSeed: true
     },
     {
@@ -61,6 +66,7 @@ let seedCocktails = [
         glass: 'Highball glass',
         ingredients: ['Ginger Ale', 'Grenadine', 'Maraschino Cherries'],
         instructions: 'Combine ginger ale and a splash of grenadine over ice, stir well and garnish with maraschino cherries.',
+        favorite: false,
         isSeed: true
     },
     {
